@@ -3,12 +3,12 @@ package main
 import "fmt"
 
 func main() {
-
 	testcases := [][]int{{-5, 1, 5, 0, -7}, {-4, -3, -2, -1, 4, 3, 2}}
 	for _, c := range testcases {
 		fmt.Println(largestAltitude(c))
 	}
 }
+
 func largestAltitude(gain []int) int {
 	current := 0
 	m := 0
