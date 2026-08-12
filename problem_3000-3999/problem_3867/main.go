@@ -34,11 +34,9 @@ func gcdSum(nums []int) int64 {
 	return sum
 }
 
-func GCD(mx, num int) int {
-	for num != 0 {
-		rem := mx % num
-		mx = num
-		num = rem
+func GCD(a, b int) int {
+	for b != 0 {
+		a, b = b, a%b
 	}
-	return mx
+	return a
 }
